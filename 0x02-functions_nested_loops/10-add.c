@@ -3,10 +3,10 @@
 /**
  * add - add two integers
  *
- * @a: first input
- * @b: second input
+ * @x: first input
+ * @z: second input
  *
- * Return: sum of a & b
+ * Return: result of x + z
 */
 
 int add(int x, int z)
