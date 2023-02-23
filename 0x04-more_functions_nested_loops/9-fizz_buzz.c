@@ -1,42 +1,35 @@
-#include "main.h"
+#include"main.h"
 
 /**
-* ft_write_number - print numbers from 1 to 100
-*
-* main - prints numbers that are multiples of 3 print Fizz
-*	numbers that are multiples of 5 print Buzz
-*	numbers that are multiples of 3 n 5 print FizzBuzz
-*	each number and word to be separated by space
-*
-* @number: is the numbers
-*
-* Return: Always 0 (Success)
+ * main - print numbers 1 - 100 followed by a new line
+ *       numbers that are multiples of 3 print Fizz
+ *       numbers that are multiples of 5 print Buzz
+ *       numbers that are multiples of 3 n 5 print FizzBuzz
+ *       each number and word to be separated by space
+ *
+ * Return: Always 0 (Success)
 */
 
-void	ft_write_number(int number)
+int main(void)
 {
-	if (number > 9)
-		ft_write_number(number / 10);
-	write(1, &"0123456789"[number % 10], 1);
-}
+	int num;
 
-int	main(void)
-{
-	int	number;
-
-	number = 1;
-	while (number <= 100)
+	for (num = 1; num <= 100; ++num)
 	{
-		if (number % 3 == 0 && number % 5 == 0)
-			write(1, "FizzBuzz", 8);
-		else if (number % 3 == 0)
-			write(1, "Fizz", 4);
-		else if (number % 5 == 0)
-			write(1, "Buzz", 4);
+		if (num % 3 == 0 && !(num % 5 == 0))
+			printf("Fizz");
+		else if (num % 5 == 0 && !(num % 3 == 0))
+			printf("Buzz");
+		else if (num % 3 == 0 && num % 5 == 0)
+			printf("FizzBuzz");
 		else
-			ft_write_number(number);
-		write(1, " ", 1);
-		number++;
+			printf("%d", num);
+
+		if (num != 100)
+			printf(" ");
+		else
+			printf("\n");
 	}
+
 	return (0);
 }
