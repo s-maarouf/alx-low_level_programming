@@ -1,42 +1,43 @@
 #include "main.h"
 
-/**
- * _sqrt_helper - recursive helper function to compute square root of a number
- * @n: the number to compute the square root of
- * @low: the lowest possible integer square root
- * @high: the highest possible integer square root
- *
- * Return: the integer square root of n, or -1 if n does not have a natural
- *         square root
- */
-int _sqrt_helper(int n, int low, int high)
-{
-	int mid;
-	int square;
+int find_sqrt(int num, int root);
+int _sqrt_recursion(int n);
 
-	mid = low + (high - low) / 2;
-	square = mid * mid;
-	if (low > high)
+/**
+ * find_sqrt - Finds the natural square root of an inputted number.
+ * @num: The number to find the square root of.
+ * @root: The root to be tested.
+ *
+ * Return: If the number has a natural square root - the square root.
+ *         If the number does not have a natural square root - -1.
+ */
+int find_sqrt(int num, int root)
+{
+	if ((root * root) == num)
+		return (root);
+
+	if (root == num / 2)
 		return (-1);
-	if (square == n)
-		return (mid);
-	else if (square > n)
-		return (_sqrt_helper(n, low, mid - 1));
-	else
-		return (_sqrt_helper(n, mid + 1, high));
+
+	return (find_sqrt(num, root + 1));
 }
 
 /**
- * _sqrt_recursion - compute the natural square root of
- *			a number using recursion
- * @n: the number to compute the square root of
+ * _sqrt_recursion - Returns the natural square root of a number.
+ * @n: The number to return the square root of.
  *
- * Return: the integer square root of n, or -1 if n does not have a natural
- *         square root
+ * Return: If n has a natural square root - the natural square root of n.
+ *         If n does not have a natural square root - -1.
  */
 int _sqrt_recursion(int n)
 {
+	int root = 0;
+
 	if (n < 0)
 		return (-1);
-	return (_sqrt_helper(n, 0, n));
+
+	if (n == 1)
+		return (1);
+
+	return (find_sqrt(n, root));
 }
