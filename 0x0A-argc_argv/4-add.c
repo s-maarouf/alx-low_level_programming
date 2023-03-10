@@ -1,19 +1,13 @@
 #include "main.h"
 
 /**
- * main - is a program that adds positive numbers.
+ * main - Prints the addition of positive numbers,
+ *        followed by a new line.
+ * @ac: The number of arguments passed to the program.
+ * @av: An array of pointers to the arguments.
  *
- * 	Print the result, followed by a new line
- *
- * 	If no number is passed to the program, print 0, followed by a new line
- *
- * 	If one of the number contains symbols that are not digits,
- * 	print Error, followed by a new line, and return 1
- *
- * @ac: arguments count
- * @av: arguments input
- *
- * Return: 0
+ * Return: If one of the numbers contains symbols that are non-digits - 1.
+ *         Otherwise - 0.
  */
 
 int main(int ac, char **av)
