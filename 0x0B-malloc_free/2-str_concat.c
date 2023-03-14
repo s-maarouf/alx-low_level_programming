@@ -36,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	if (s1)
-	{	
+	{
 		while (i < l1)
 		{
 			res[i] = s1[i];
