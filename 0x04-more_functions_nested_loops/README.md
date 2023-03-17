@@ -1,6 +1,6 @@
 # About these files
 
-## 0) 0-isupper.c
+## 0) [0-isupper.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/0-isupper.c)
 This function checks for uppercase character.
 - Prototype: `int _isupper(int c);`
 - Returns 1 if c is uppercase
@@ -37,7 +37,7 @@ a: 0
 julien@ubuntu:~/0x04$
 ```
 
-## 1) 1-isdigit.c
+## 1) [1-isdigit.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/1-isdigit.c)
 This function checks for a digit (0 through 9).
 - Prototype: `int _isdigit(int c);`
 - Returns 1 if c is a digit
@@ -74,7 +74,7 @@ a: 0
 julien@ubuntu:~/0x04$
 ```
 
-## 2) 2-mul.c
+## 2) [2-mul.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/2-mul.c)
 This function multiplies two integers.
 - Prototype: `int mul(int a, int b);`
 
@@ -105,7 +105,7 @@ julien@ubuntu:~/0x04$ ./2-mul
 julien@ubuntu:~/0x04$ 
 ```
 
-## 3) 3-print_numbers.c
+## 3) [3-print_numbers.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/3-print_numbers.c)
 This function prints the numbers, from 0 to 9, followed by a new line.
 - Prototype: `void print_numbers(void);`
 
@@ -133,7 +133,7 @@ julien@ubuntu:~/0x04$ ./3-print_numbers | cat -e
 julien@ubuntu:~/0x04$ 
 ```
 
-## 4) 4-print_most_numbers.c
+## 4) [4-print_most_numbers.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/4-print_most_numbers.c)
 This function prints the numbers, from 0 to 9, followed by a new line.
 - Prototype: `void print_most_numbers(void);`
 - Do not print `2` and `4`
@@ -162,7 +162,7 @@ julien@ubuntu:~/0x04$ ./4-print_most_numbers
 julien@ubuntu:~/0x04$ 
 ```
 
-## 5) 5-more_numbers.c
+## 5) [5-more_numbers.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/5-more_numbers.c)
 This function prints 10 times the numbers, from 0 to 14, followed by a new line.
 - Prototype: `void more_numbers(void);`
 
@@ -199,7 +199,7 @@ julien@ubuntu:~/0x04$ ./5-more_numbers
 julien@ubuntu:~/0x04
 ```
 
-## 6) 6-print_line.c
+## 6) [6-print_line.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/6-print_line.c)
 This function draws a straight line in the terminal.
 - Prototype: `void print_line(int n);`
 - Where `n` is the number of times the character `_` should be printed
@@ -236,7 +236,7 @@ $
 julien@ubuntu:~/0x04$ 
 ```
 
-## 7) 7-print_diagonal.c
+## 7) [7-print_diagonal.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/7-print_diagonal.c)
 This function draws a diagonal line on the terminal.
 - Prototype: `void print_diagonal(int n);`
 - Where `n` is the number of times the character `\` should be printed
@@ -283,7 +283,7 @@ $
 julien@ubuntu:~/0x04$ 
 ```
 
-## 8) 8-print_square.c
+## 8) [8-print_square.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/8-print_square.c)
 This function prints a square, followed by a new line.
 - Prototype: `void print_square(int size);`
 - Where `size` is the size of the square
@@ -328,7 +328,7 @@ julien@ubuntu:~/0x04$ ./8-squares
 julien@ubuntu:~/0x04$
 ```
 
-## 9) 9-fizz_buzz.c
+## 9) [9-fizz_buzz.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/9-fizz_buzz.c)
 This program prints the numbers from 1 to 100, followed by a new line. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`. For numbers which are multiples of both three and five print `FizzBuzz`.
 - Each number or word should be separated by a space
 
@@ -339,7 +339,7 @@ julien@ubuntu:~/0x04$ ./9-fizz_buzz
 julien@ubuntu:~/0x04$
 ```
 
-## 10) 10-print_triangle.c
+## 10) [10-print_triangle.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/10-print_triangle.c)
 This function prints a triangle, followed by a new line.
 - Prototype: `void print_triangle(int size);`
 - Where `size` is the size of the triangle
@@ -401,11 +401,11 @@ $
 julien@ubuntu:~/0x04$
 ```
 
-## 11) 100-prime_factor.c
+## 11) [100-prime_factor.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/100-prime_factor.c)
 This program finds and prints the largest prime factor of the number 612852475143, followed by a new line.
 
 
-## 12) 101-print_number.c
+## 12) [101-print_number.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x04-more_functions_nested_loops/101-print_number.c)
 This function prints an integer.
 - Prototype: `void print_number(int n);`
 - You are not allowed to use long, arrays or pointers or to hard-code special values
