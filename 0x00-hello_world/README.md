@@ -1,6 +1,6 @@
 # About these files
 
-## 0) 0-preprocessor
+## 0) [0-preprocessor](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/0-preprocessor)
 This script runs a C file through the preprocessor and save the result into another file
 * The C file name will be saved in the variable `$CFILE`
 * The output should be saved in the file `c`
@@ -37,7 +37,7 @@ int main(void)
 julien@ubuntu:~/c/0x00$
 ```
 
-## 1) 1-compiler
+## 1) [1-compiler](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/1-compiler)
 This script compiles a C file but does not link
 * The C file name is saved in the variable `$CFILE`
 * The output file should be named the same as the C file, but with the extension .o instead of .c
@@ -70,7 +70,7 @@ julien@ubuntu:~/c/0x00$ cat -v main.o | head
 julien@ubuntu:~/c/0x00$ 
 ```
 
-## 2) 2-assembler
+## 2) [2-assembler](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/2-assembler)
 This script generates the assembly code of a C code and save it in an output file
 * The C file name is saved in the variable `$CFILE`
 * The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
@@ -121,7 +121,7 @@ main:
 julien@ubuntu:~/c/0x00$
 ```
 
-## 3) 3-name
+## 3) [3-name](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/3-name)
 This script compiles a C file and creates an executable named `cisfun`
 * The C file name is saved in the variable `$CFILE`
 
@@ -151,7 +151,7 @@ julien@ubuntu:~/c/0x00$ ls
 julien@ubuntu:~/c/0x00$ 
 ```
 
-## 4) 4-puts.c
+## 4) [4-puts.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/4-puts.c)
 This C program prints exactly _"Programming is like building a multilingual puzzle_, followed by a new line
 * Using the function `puts`
 * `printf` is not allowed
@@ -164,7 +164,7 @@ julien@ubuntu:~/c/0x00$ echo $?
 julien@ubuntu:~/c/0x00$ 
 ```
 
-## 5) 5-printf.c
+## 5) [5-printf.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/5-printf.c)
 This C program prints exactly  _with proper grammar, but the outcome is a piece of art,_, followed by a new line
 * Using the function `puts`
 * `printf` is not allowed
@@ -179,7 +179,7 @@ julien@ubuntu:~/c/0x00$ echo $?
 julien@ubuntu:~/c/0x00$ 
 ```
 
-## 6) 6-size.c
+## 6) [6-size.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/6-size.c)
 This C program prints the size of various types on the computer it is compiled and run on
 * Warnings are allowed
 * Program should return 0
@@ -204,7 +204,7 @@ julien@ubuntu:~/c/0x00$ echo $?
 julien@ubuntu:~/c/0x00$
 ```
 
-## 7) 100-intel
+## 7) [100-intel](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/100-intel)
 This script generates the assembly code (Intel syntax) of a C code and save it in an output file
 * The C file name will be saved in the variable `$CFILE`.
 * The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
@@ -253,7 +253,7 @@ main:
 julien@ubuntu:~/c/0x00$ 
 ```
 
-## 8) 101-quote.c
+## 8) [101-quote.c](https://github.com/s-maarouf/alx-low_level_programming/blob/master/0x00-hello_world/101-quote.c)
 This C program prints exactly _and that piece of art is useful" - Dora Korpar, 2015-10-19_, followed by a new line, to the standard error.
 * NAME section of the man (3) `printf` or man (3) `puts` functions are not allowed
 * Program should return 1
