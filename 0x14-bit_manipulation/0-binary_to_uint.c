@@ -19,22 +19,21 @@ unsigned int binary_to_uint(const char *b)
 	{
 		len++;
 	}
-	if (len == '\0')
+	if (b[i] == '\0')
 		return (0);
 
-	else if (b[len] != '0' && b[len] != '1')
+	else if (b[i] != '0' && b[i] != '1')
 		return (0);
-	else
-		for (i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
+	{
+		if (b[i] == '1')
 		{
-			if (b[i] == '1')
-			{
-				res += 1 << (len - i - 1);
-			}
-			else if (b[i] != '0')
-			{
-				return (0);
-			}
+			res += 1 << (len - i - 1);
 		}
+		else if (b[i] != '0')
+		{
+			return (0);
+		}
+	}
 	return (res);
 }
