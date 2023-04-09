@@ -11,6 +11,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int o, w, i = 0;
+	int bytes_written = 0;
 
 	if (filename == NULL)
 	{
@@ -21,8 +22,16 @@ int create_file(const char *filename, char *text_content)
 		i++;
 	}
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(o, text_content, i);
-
+	while (bytes_written < i)
+	{
+		w = write(o, text_content + bytes_written, i - bytes_written);
+		if (w < 0)
+		{
+			close(o);
+			return (-1);
+		}
+		bytes_written += w;
+	}
 	if (o == -1 || w == -1)
 	{
 		return (-1);
