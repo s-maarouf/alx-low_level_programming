@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc -shared *.o -o libdynamic.so
+gcc -shared *.c -o libdynamic.so
